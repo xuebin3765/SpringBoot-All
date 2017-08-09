@@ -283,3 +283,29 @@ Consider defining a bean of type 'redis.clients.jedis.JedisPoolConfig' in your c
 2017-08-08 18:04:32.137  INFO 31540 --- [main] com.java.manual.Subscribe                : Subscribe-onPSubscribe>>>>>>>>>>>>>>>>>>>>>>>>product/actives/*=3
 2017-08-08 18:08:55.265  INFO 31540 --- [main] com.java.manual.Subscribe                : user/actives/*=user/actives/add=增加123466dsd
 2017-08-08 18:11:06.737  INFO 31540 --- [main] com.java.manual.Subscribe                : user/actives/*=user/actives/add={"number":30,"id":10,"type":"type"}
+2017-08-09 09:27:12.298  INFO 8264 --- [main] c.j.manual.SpringBootRedisApplication    : Starting SpringBootRedisApplication on IALVL7WUZ03NKVO with PID 8264 (D:\IdeaProjects\SpringBoot-All\redis\target\classes started by Administrator in D:\IdeaProjects\SpringBoot-All)
+2017-08-09 09:27:12.307  INFO 8264 --- [main] c.j.manual.SpringBootRedisApplication    : No active profile set, falling back to default profiles: default
+2017-08-09 09:27:12.485  INFO 8264 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@92b6c6: startup date [Wed Aug 09 09:27:12 CST 2017]; root of context hierarchy
+2017-08-09 09:27:14.218  INFO 8264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-08-09 09:27:16.390  INFO 8264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8890 (http)
+2017-08-09 09:27:16.418  INFO 8264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-09 09:27:16.421  INFO 8264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-09 09:27:16.704  INFO 8264 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-09 09:27:16.705  INFO 8264 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4230 ms
+2017-08-09 09:27:17.174  INFO 8264 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-09 09:27:17.185  INFO 8264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-09 09:27:17.186  INFO 8264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-09 09:27:17.186  INFO 8264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-09 09:27:17.187  INFO 8264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-09 09:27:18.478  INFO 8264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@92b6c6: startup date [Wed Aug 09 09:27:12 CST 2017]; root of context hierarchy
+2017-08-09 09:27:18.677  INFO 8264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-09 09:27:18.679  INFO 8264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-09 09:27:18.757  INFO 8264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 09:27:18.757  INFO 8264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 09:27:18.871  INFO 8264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 09:27:19.819  INFO 8264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-09 09:27:20.002  INFO 8264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8890 (http)
+2017-08-09 09:27:20.074  INFO 8264 --- [main] com.java.manual.Subscribe                : Subscribe-onPSubscribe>>>>>>>>>>>>>>>>>>>>>>>>user_*_*=1
+2017-08-09 09:27:20.075  INFO 8264 --- [main] com.java.manual.Subscribe                : Subscribe-onPSubscribe>>>>>>>>>>>>>>>>>>>>>>>>order/actives/*=2
+2017-08-09 09:27:20.075  INFO 8264 --- [main] com.java.manual.Subscribe                : Subscribe-onPSubscribe>>>>>>>>>>>>>>>>>>>>>>>>product/actives/*=3
+2017-08-09 09:28:17.127  INFO 8264 --- [main] com.java.manual.Subscribe                : user_*_*=user_actives_add={"number":30,"id":10,"type":"type"}   ===   

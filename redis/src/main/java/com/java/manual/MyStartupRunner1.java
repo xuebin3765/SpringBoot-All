@@ -19,7 +19,7 @@ public class MyStartupRunner1 implements CommandLineRunner{
     public void run(String... strings) throws Exception {
         Jedis jedis= jedisPool.getResource();
         try {
-            jedis.psubscribe(new Subscribe(), new String[]{"user/actives/*" , "order/actives/*" , "product/actives/*"});
+            jedis.psubscribe(new Subscribe(), new String[]{"user_*_*" , "order/actives/*" , "product/actives/*"});
         } catch (Exception e) {
             jedis.close();
             e.printStackTrace();
