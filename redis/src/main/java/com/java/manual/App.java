@@ -5,6 +5,7 @@ import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 /**
+ *
  * Created by Administrator on 2017/8/8 0008.
  */
 public class App {
@@ -18,8 +19,8 @@ public class App {
             jsonObject.put("type" , "type");
             jsonObject.put("id" , 10);
             jsonObject.put("number" , 30);
-            jr.publish("order/actives/add" , jsonObject.toJSONString());
-            jr.publish("order/actives/delete" , jsonObject.toJSONString()+"   ===   ");
+            jr.publish("qa/topicNotificationService/deleteByUserIdAndTopicId" , "20_30");
+            jr.publish("qa/topicNotificationService/deleteByUserId" , "30");
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CloudConfig:war">
+    <output-path>$PROJECT_DIR$/CloudConfig/target</output-path>
+    <root id="archive" name="Cloud-Config.war">
+      <element id="artifact" artifact-name="CloudConfig:war exploded" />
+    </root>
+  </artifact>
+</component>
